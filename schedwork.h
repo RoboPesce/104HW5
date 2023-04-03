@@ -10,9 +10,10 @@ typedef unsigned int Worker_T;
 // n-by-k Matrix of each of the k workers' availability over an n-day period
 typedef std::vector<std::vector<bool>> AvailabilityMatrix;
 
+typedef std::vector<Worker_T> Day;
 // n-by-d matrix with the d worker IDs who are scheduled 
 // to work on each of the n days
-typedef std::vector<std::vector<Worker_T> > DailySchedule;
+typedef std::vector<Day> DailySchedule;
 
 /**
  * @brief Produces a work schedule given worker availability,
